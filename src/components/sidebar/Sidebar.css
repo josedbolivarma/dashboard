@@ -1,0 +1,99 @@
+.sidebar {
+    position: sticky;
+    left: 0;
+    background-color: #FFFFFE;
+    height: 100vh;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+.sidebar__top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.sidebar__toggle {
+    display: none;
+}
+
+.sidebar__brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.sidebar__links {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar__logout {
+    padding: 0.3rem 1rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
+}
+
+.sidebar__logout:hover {
+    background-color: #DA0037;
+}
+
+/* Components */
+.sidebar__icon {
+    width: 35px;
+    height: 35px;
+}
+
+span {
+    font-size: 1.2rem;
+    color: #000;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li {
+    padding: 0.6rem;
+}
+
+ul li:hover {
+    background-color: #eff2f9;
+    color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #000;
+}
+
+.active {
+    border-bottom: 2px solid #212121;
+    color: #FFF;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* NAVBAR */

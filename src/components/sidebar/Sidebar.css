@@ -66,13 +66,23 @@ ul {
     flex-direction: column;
 }
 
-ul li {
+/* ul li {
     padding: 0.6rem;
+} */
+
+.sidebar__link {
+    padding: .6rem;
 }
 
-ul li:hover {
+.sidebar__link:hover {
     background-color: #eff2f9;
     color: #FFF;
+}
+
+.sidebar__link li {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
 }
 
 a {
@@ -84,9 +94,7 @@ a {
 }
 
 .active {
-    width: 100%;
-    border-bottom: 8px solid #212121;
-    color: #FFF;
+    color: red;
 }
 
 /* Media Queries */

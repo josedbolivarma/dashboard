@@ -21,26 +21,26 @@ const Sidebar = () => {
             </div>
             <div className='sidebar__links'>
                 <ul>
-                    <li onClick={() => setCurrentLink(1)}  className={currentLink === 1 ? "active" : ""}>
-                        <Link to='/'>
+                        <Link onClick={() => setCurrentLink(1)} className='sidebar__link' to='/'>
+                    <li>
                         <img className='sidebar__icon' src={homeIcon} alt='Icon'/>
-                        <span>Home</span>
+                        <span className={currentLink === 1 ? "active" : ""}>Home</span>
 
-                        </Link>
                     </li>
-                    <li onClick={() => setCurrentLink(2)}  className={currentLink === 2 ? "active" : ""}>
-                        <Link to='/measurements'>
+                        </Link>
+                        <Link onClick={() => setCurrentLink(2)} className='sidebar__link' to='/measurements'>
+                    <li>
                         <img className='sidebar__icon' src={homeIcon} alt='Icon'/>
-                        <span>Measurements</span>
+                        <span  className={currentLink === 2 ? "active" : ""}>Measurements</span>
 
+                    </li>
                         </Link>         
-                    </li>
-                    <li onClick={() => setCurrentLink(3)}  className={currentLink === 3 ? "active" : ""}>
-                     <Link to='/settings'>
+                     <Link onClick={() => setCurrentLink(3)}   className='sidebar__link' to='/settings'>
+                    <li>
                         <img className='sidebar__icon' src={homeIcon} alt='Icon'/>
-                            <span>Settings</span>
-                        </Link>
+                            <span  className={currentLink === 3 ? "active" : ""}>Settings</span>
                     </li>
+                        </Link>
                 </ul>
             </div>
         </div>

@@ -37,16 +37,25 @@
 }
 
 .sidebar__logout {
-    /* padding: 0.3rem 0rem; */
-    border-radius: 0.6rem;
+    padding: 0.3rem 1.4rem;
+    border-radius: 2px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: #000;
+    background-color: #2BBBAD;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: opacity .2s ease-out;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.sidebar__logout .logout {
+    color: #FFF;
 }
 
 .sidebar__logout:hover {
-    background-color: #DA0037;
+    opacity: .9;
 }
 
 /* Components */
@@ -94,7 +103,7 @@ a {
 }
 
 .active {
-    color: red;
+    color: #2BBBAD;
 }
 
 /* Media Queries */

@@ -1,8 +1,20 @@
 .home {
-    width: 100%
+    width: 98%;
+    min-height: 60vh;
+    padding: 2rem 0;
+    margin: 2rem auto;
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow:  5px 5px 10px #cacaca,
+             -5px -5px 10px #f6f6f6;
 }
 
 .home__container {
     width: 98%;
+    height: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+

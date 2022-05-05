@@ -1,8 +1,16 @@
 import React from 'react'
+import Dashboard from '../../containers/dashboard/Dashboard'
+
+// Styles
+import './Measurements.css'
 
 const Measurements = () => {
   return (
-    <div>Measurements</div>
+    <div className='measurements'>
+        <div className='measurements__container'>
+          <Dashboard />
+        </div>
+    </div>
   )
 }
 

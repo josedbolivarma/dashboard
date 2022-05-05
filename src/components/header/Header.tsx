@@ -13,14 +13,12 @@ const [currentLink, setCurrentLink] = useState<Number>(1);
       <div>
     <div className='header'> 
         <div className='header__container'>
+            <Link to='/'>
             <div className='header__title'>
-            <h4 className='header__titleUser'>Hi José,</h4>
-            <h2 className='header__titleSection'>Welcome to <span>Dashboard</span></h2>
+            {/* <h4 className='header__titleUser'></h4> */}
+            <h2 className='header__titleSection'>Regresar</h2>
             </div>
-        <div className='header__search'>
-            <img className='header__logo' src={homeIcon} alt='Icon'/>
-            <input className='header__searchInput' type="text" placeholder='Search' />
-        </div>
+            </Link>
         <button onClick={() => setShowNavbar(true)} className='responsive__icon'>MENU</button>
         </div>
         

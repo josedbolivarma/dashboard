@@ -1,0 +1,8 @@
+.measurements {
+    width: 100%
+}
+
+.measurements__container {
+    width: 98%;
+    margin: 0 auto;
+}

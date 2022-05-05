@@ -1,5 +1,4 @@
-import React from 'react'
-import Dashboard from '../../containers/dashboard/Dashboard'
+import React from 'react';
 
 //Styles
 import './Home.css';
@@ -8,7 +7,7 @@ const Home = () => {
   return (
     <div className='home'>
         <div className='home__container'>
-          <Dashboard />
+          <h2>INICIO</h2>
         </div>
     </div>
   )

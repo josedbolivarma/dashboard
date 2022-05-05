@@ -39,6 +39,7 @@ const Results = () => {
                         </Link>
                     </td>
                 </tr>
+                
         {/* {
             citas.map(cita => (
                 <tr key={cita.id}>

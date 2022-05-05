@@ -1,8 +1,16 @@
 import React from 'react'
+import Dashboard from '../../containers/dashboard/Dashboard'
+
+//Styles
+import './Home.css';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='home'>
+        <div className='home__container'>
+          <Dashboard />
+        </div>
+    </div>
   )
 }
 

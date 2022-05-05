@@ -1,14 +1,13 @@
 .sidebar {
     position: sticky;
     left: 0;
-    background-color: #FFFFFE;
+    background-color: #FFF;
     height: 100vh;
-    width: 26vw;
+    width: 16vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 2rem 0;
     gap: 2rem;
 }
 
@@ -32,12 +31,13 @@
 }
 
 .sidebar__links {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .sidebar__logout {
-    padding: 0.3rem 1rem;
+    /* padding: 0.3rem 0rem; */
     border-radius: 0.6rem;
     display: flex;
     justify-content: flex-start;
@@ -56,7 +56,7 @@
 }
 
 span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #000;
 }
 
@@ -84,7 +84,8 @@ a {
 }
 
 .active {
-    border-bottom: 2px solid #212121;
+    width: 100%;
+    border-bottom: 8px solid #212121;
     color: #FFF;
 }
 

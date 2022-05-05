@@ -1,0 +1,42 @@
+.dashboard {
+    width: 100%;
+    min-height: 60vh;
+    padding: 2rem 0;
+    margin: 2rem auto;
+    border-radius: 7px;
+    background: #f6f6f6;
+    box-shadow:  5px 5px 10px #cacaca,
+             -5px -5px 10px #f6f6f6;
+}
+
+.dashboard__container {
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* Site Style */
+
+.dashboard__title {
+    text-align: center;
+    margin-bottom: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.dashboard__table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.dashboard__thead,
+.dashboard__body {
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard__tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}

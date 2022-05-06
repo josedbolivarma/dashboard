@@ -6,3 +6,26 @@
     width: 98%;
     margin: 0 auto;
 }
+
+.measurements__search {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    background-color: #C8C8C8;
+    padding: .4rem .6rem;
+    border-radius: 25px;
+    margin-top: 2rem;
+}
+
+.measurements__searchIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.measurements__searchInput {
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+}

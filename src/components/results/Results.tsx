@@ -1,8 +1,59 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Results.css';
 
+const initialState = [
+    {   
+        fecha: '05/05/2022',
+        id: 1,
+        nombre: 'Norman',
+        peso: '68KG',
+        altura: '170',
+        edad: 0,
+        genero: 'Hombre',
+        fuma: 'NO',
+        medica: 'NO',
+        diabetico: 'SI'
+    },
+    {   
+        fecha: '05/05/2022',
+        id: 2,
+        nombre: 'Manuel',
+        peso: '68KG',
+        altura: '170',
+        edad: 0,
+        genero: 'Hombre',
+        fuma: 'NO',
+        medica: 'NO',
+        diabetico: 'SI'
+    },
+    {   
+        fecha: '05/05/2022',
+        id: 3,
+        nombre: 'Isabella',
+        peso: '68KG',
+        altura: '170',
+        edad: 0,
+        genero: 'Hombre',
+        fuma: 'NO',
+        medica: 'NO',
+        diabetico: 'SI'
+    },
+]
+
 const Results = () => {
+  const [filtrado, setFiltrado] = useState(initialState);
+  const [filtradoProductos, setFiltradoProductos] = useState(initialState);
+
+  const { products } = useSelector((store: any) => store.products);
+  console.log(products, 'FILTRADO EN RESULTS');
+
+  useEffect(() => {
+    const filtradoTotal = filtrado.filter((item: any) => item.nombre.toLocaleLowerCase().includes(products.toLocaleLowerCase()));
+    setFiltradoProductos(filtradoTotal);
+  }, [products])
+  
   return (
     <table className='dashboard__table'>
     <thead className='dashboard__thead'>
@@ -20,7 +71,33 @@ const Results = () => {
         </tr>
     </thead>
     <tbody className='dashboard__body'>
-    <tr className='dashboard__tr'>
+    {
+
+        
+    filtradoProductos.map((item) => (
+            <tr key={item.id} className='dashboard__tr'>
+                    <td>{ item.fecha}</td>
+                    <td>{ item.id }</td>
+                    <td>{ item.nombre }</td>
+                    <td>{ item.peso }</td>
+                    <td>{ item.altura }</td>
+                    <td>{ item.edad }</td>
+                    <td>{ item.genero }</td>
+                    <td>{ item.fuma }</td>
+                    <td>{ item.medica }</td>
+                    <td>{ item.diabetico }</td>
+                    <td>
+                        <Link to='/health'>
+                        <button className='dashboard__btn'>
+                            VER MEDICIÓN
+                        </button>
+                        </Link>
+                    </td>
+                </tr> 
+        ))
+    }
+
+    {/* <tr className='dashboard__tr'>
                     <td>05/05/2022</td>
                     <td>1</td>
                     <td>Susana</td>
@@ -38,8 +115,8 @@ const Results = () => {
                         </button>
                         </Link>
                     </td>
-                </tr>
-                
+                </tr> */}
+
         {/* {
             citas.map(cita => (
                 <tr key={cita.id}>
